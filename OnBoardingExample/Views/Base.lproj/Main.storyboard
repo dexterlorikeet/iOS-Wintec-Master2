@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OnBoardingExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="anp-z1-Sos">
+                                <rect key="frame" x="168" y="576" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nkc-tZ-Hum">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Nkc-tZ-Hum" secondAttribute="trailing" id="2MS-D4-Lg5"/>
+                            <constraint firstItem="Nkc-tZ-Hum" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8IF-8f-LzQ"/>
+                            <constraint firstItem="anp-z1-Sos" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="556" id="AJp-mW-x8j"/>
+                            <constraint firstItem="Nkc-tZ-Hum" firstAttribute="centerX" secondItem="anp-z1-Sos" secondAttribute="centerX" id="Tq1-Tk-qru"/>
+                            <constraint firstItem="anp-z1-Sos" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="168" id="o7M-XS-nxO"/>
+                            <constraint firstItem="Nkc-tZ-Hum" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="p2z-M1-whd"/>
+                            <constraint firstItem="Nkc-tZ-Hum" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vpv-Lh-qpK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="Nkc-tZ-Hum" id="Krj-hI-pJ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
