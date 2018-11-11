@@ -36,31 +36,20 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
 
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide1.imageView.image = UIImage(named: "ic_onboarding_1")
-        slide1.labelTitle.text = "A real-life bear"
-        slide1.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+        slide1.labelTitle.text = "Select Programme"
+        slide1.labelDesc.text = "Selecting your programme will allow you to view modules for specializations"
         
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide2.imageView.image = UIImage(named: "ic_onboarding_2")
-        slide2.labelTitle.text = "A real-life bear"
-        slide2.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+        slide2.labelTitle.text = "Select Semester"
+        slide2.labelDesc.text = "Shows you all the available modules possible as you select a semester across all levels of study"
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide3.imageView.image = UIImage(named: "ic_onboarding_3")
-        slide3.labelTitle.text = "A real-life bear"
-        slide3.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+        slide3.labelTitle.text = "Select Course"
+        slide3.labelDesc.text = "Display all the possible courses across all programmes"
         
-        let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide4.imageView.image = UIImage(named: "ic_onboarding_4")
-        slide4.labelTitle.text = "A real-life bear"
-        slide4.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
-        
-        
-        let slide5:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide5.imageView.image = UIImage(named: "ic_onboarding_5")
-        slide5.labelTitle.text = "A real-life bear"
-        slide5.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
-        
-        return [slide1, slide2, slide3, slide4, slide5]
+        return [slide1, slide2, slide3]
     }
     
     
@@ -114,16 +103,8 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
             
         } else if(percentOffset.x > 0.25 && percentOffset.x <= 0.50) {
             slides[1].imageView.transform = CGAffineTransform(scaleX: (0.50-percentOffset.x)/0.25, y: (0.50-percentOffset.x)/0.25)
-            slides[2].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.50, y: percentOffset.x/0.50)
+            slides[2].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.50, y: percentOffset.x)
             
-        } else if(percentOffset.x > 0.50 && percentOffset.x <= 0.75) {
-            slides[2].imageView.transform = CGAffineTransform(scaleX: (0.75-percentOffset.x)/0.25, y: (0.75-percentOffset.x)/0.25)
-            slides[3].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.75, y: percentOffset.x/0.75)
-            
-        } else if(percentOffset.x > 0.75 && percentOffset.x <= 1) {
-            slides[3].imageView.transform = CGAffineTransform(scaleX: (1-percentOffset.x)/0.25, y: (1-percentOffset.x)/0.25)
-            slides[4].imageView.transform = CGAffineTransform(scaleX: percentOffset.x, y: percentOffset.x)
-        }
     }
     
     
@@ -165,6 +146,7 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
         
         // return the fade colour
         return UIColor(red: red, green: green, blue: blue, alpha: alpha)
+        }
     }
-}
 
+}
