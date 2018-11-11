@@ -49,6 +49,11 @@
                         <constraint firstAttribute="width" secondItem="QDx-f0-rb9" secondAttribute="height" multiplier="207:130" id="FlP-pk-Meu"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usU-sL-yes">
+                    <rect key="frame" x="0.0" y="75" width="375" height="236"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="M3Z-3U-9Q6" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="0oo-FU-riS"/>
