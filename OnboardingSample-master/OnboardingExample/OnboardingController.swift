@@ -1,7 +1,11 @@
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class OnboardingController: UIViewController, UIScrollViewDelegate {
 
+    @IBAction func login(_ sender: Any) {
+        NSLog(" login");
+    }
+    
     @IBOutlet weak var scrollView: UIScrollView!{
         didSet{
             scrollView.delegate = self

@@ -20,6 +20,9 @@
 		085B0ECA2080804D00AF5F8A /* montserrat_medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 085B0EC62080804D00AF5F8A /* montserrat_medium.otf */; };
 		085B0ECB2080804D00AF5F8A /* montserrat_regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 085B0EC72080804D00AF5F8A /* montserrat_regular.otf */; };
 		085B0ECC2080804D00AF5F8A /* montserrat_light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 085B0EC82080804D00AF5F8A /* montserrat_light.otf */; };
+		0E3AC2D12196E09C008D8A14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2D02196E09C008D8A14 /* ViewController.swift */; };
+		0EB760AC2196CCE300035F18 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EB760AB2196CCE300035F18 /* background.jpg */; };
+		0EB760AE2196CCF000035F18 /* winteclogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EB760AD2196CCF000035F18 /* winteclogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		085B0EC62080804D00AF5F8A /* montserrat_medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_medium.otf; sourceTree = "<group>"; };
 		085B0EC72080804D00AF5F8A /* montserrat_regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_regular.otf; sourceTree = "<group>"; };
 		085B0EC82080804D00AF5F8A /* montserrat_light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_light.otf; sourceTree = "<group>"; };
+		0E3AC2D02196E09C008D8A14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0EB760AB2196CCE300035F18 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = "../../../../../Wintec-CBITE-iOS- Master/Images/background.jpg"; sourceTree = "<group>"; };
+		0EB760AD2196CCF000035F18 /* winteclogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = winteclogo.png; path = "../../../../../Wintec-CBITE-iOS- Master/Images/winteclogo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +119,10 @@
 				085B0EBF20807C0C00AF5F8A /* views */,
 				085B0E91208073E500AF5F8A /* AppDelegate.swift */,
 				085B0E93208073E500AF5F8A /* OnboardingController.swift */,
+				0E3AC2D02196E09C008D8A14 /* ViewController.swift */,
 				085B0E95208073E500AF5F8A /* Main.storyboard */,
 				085B0E98208073EC00AF5F8A /* Assets.xcassets */,
+				0EE382912196CB21008D2D6E /* Images */,
 				085B0E9A208073EC00AF5F8A /* LaunchScreen.storyboard */,
 				085B0E9D208073EC00AF5F8A /* Info.plist */,
 			);
@@ -157,6 +165,15 @@
 				085B0EC72080804D00AF5F8A /* montserrat_regular.otf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		0EE382912196CB21008D2D6E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0EB760AD2196CCF000035F18 /* winteclogo.png */,
+				0EB760AB2196CCE300035F18 /* background.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +280,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EB760AC2196CCE300035F18 /* background.jpg in Resources */,
 				085B0E9C208073EC00AF5F8A /* LaunchScreen.storyboard in Resources */,
+				0EB760AE2196CCF000035F18 /* winteclogo.png in Resources */,
 				085B0ECC2080804D00AF5F8A /* montserrat_light.otf in Resources */,
 				085B0EC92080804D00AF5F8A /* montserrat_bold.otf in Resources */,
 				085B0E99208073EC00AF5F8A /* Assets.xcassets in Resources */,
@@ -298,6 +317,7 @@
 				085B0EC320807C9600AF5F8A /* Slide.swift in Sources */,
 				085B0E94208073E500AF5F8A /* OnboardingController.swift in Sources */,
 				085B0E92208073E500AF5F8A /* AppDelegate.swift in Sources */,
+				0E3AC2D12196E09C008D8A14 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,15 +490,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9F7F9865F2;
+				DEVELOPMENT_TEAM = 6SWPU6K4KZ;
 				INFOPLIST_FILE = OnboardingExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.an.onboarding.OnboardingExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.an.onboarding.ioswintec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -488,15 +510,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9F7F9865F2;
+				DEVELOPMENT_TEAM = 6SWPU6K4KZ;
 				INFOPLIST_FILE = OnboardingExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.an.onboarding.OnboardingExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.an.onboarding.ioswintec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
