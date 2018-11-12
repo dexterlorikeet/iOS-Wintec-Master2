@@ -34,24 +34,40 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
     
     func createSlides() -> [Slide] {
 
+        
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide1.imageView.image = UIImage(named: "ic_onboarding_1")
         slide1.labelTitle.text = "Select Programme"
         slide1.labelDesc.text = "Selecting your programme will allow you to view modules for specializations"
+        slide1.btn.addTarget(self, action: #selector(self.showProgrammes), for: .touchUpInside)
+        // button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide2.imageView.image = UIImage(named: "ic_onboarding_2")
         slide2.labelTitle.text = "Select Semester"
         slide2.labelDesc.text = "Shows you all the available modules possible as you select a semester across all levels of study"
+        slide2.btn.addTarget(self, action: #selector(self.showSemester), for: .touchUpInside)
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide3.imageView.image = UIImage(named: "ic_onboarding_3")
         slide3.labelTitle.text = "Select Course"
         slide3.labelDesc.text = "Display all the possible courses across all programmes"
+        slide3.btn.addTarget(self, action: #selector(self.showCourses), for: .touchUpInside)
         
         return [slide1, slide2, slide3]
     }
     
+    @objc func showProgrammes(sender: UIButton!) {
+        print("Showing Programmes")
+    }
+    
+    @objc func showSemester(sender: UIButton!) {
+        print("Showing Semester")
+    }
+    
+    @objc func showCourses(sender: UIButton!) {
+        print("Showing Courses")
+    }
     
     func setupSlideScrollView(slides : [Slide]) {
         scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
@@ -128,7 +144,7 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    
+    // Don't remove - check later and understand how this works
     func fade(fromRed: CGFloat,
               fromGreen: CGFloat,
               fromBlue: CGFloat,
@@ -138,7 +154,7 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
               toBlue: CGFloat,
               toAlpha: CGFloat,
               withPercentage percentage: CGFloat) -> UIColor {
-        
+        // Don't remove - check later and understand how this works 
         let red: CGFloat = (toRed - fromRed) * percentage + fromRed
         let green: CGFloat = (toGreen - fromGreen) * percentage + fromGreen
         let blue: CGFloat = (toBlue - fromBlue) * percentage + fromBlue
