@@ -21,12 +21,13 @@
 		085B0ECB2080804D00AF5F8A /* montserrat_regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 085B0EC72080804D00AF5F8A /* montserrat_regular.otf */; };
 		085B0ECC2080804D00AF5F8A /* montserrat_light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 085B0EC82080804D00AF5F8A /* montserrat_light.otf */; };
 		0E3AC2D12196E09C008D8A14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2D02196E09C008D8A14 /* ViewController.swift */; };
-		0E3AC2D32197D51E008D8A14 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2D22197D51E008D8A14 /* Course.swift */; };
 		0E3AC2D52197D587008D8A14 /* DataStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2D42197D587008D8A14 /* DataStudy.swift */; };
 		0E3AC2D82197D5E7008D8A14 /* Preload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2D72197D5E7008D8A14 /* Preload.swift */; };
-		0E3AC2DA2197D5F9008D8A14 /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2D92197D5F9008D8A14 /* Programme.swift */; };
 		0E3AC2DC2197D60A008D8A14 /* Semester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2DB2197D60A008D8A14 /* Semester.swift */; };
 		0E3AC2DE2197D61B008D8A14 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2DD2197D61B008D8A14 /* Student.swift */; };
+		0E9084B1219C15D2006E5BF8 /* ProgrammeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9084B0219C15D2006E5BF8 /* ProgrammeController.swift */; };
+		0E9084B5219CC25E006E5BF8 /* CourseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9084B4219CC25E006E5BF8 /* CourseController.swift */; };
+		0E9084B7219CC3FD006E5BF8 /* SemesterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9084B6219CC3FD006E5BF8 /* SemesterController.swift */; };
 		0EB760AC2196CCE300035F18 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EB760AB2196CCE300035F18 /* background.jpg */; };
 		0EB760AE2196CCF000035F18 /* winteclogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EB760AD2196CCF000035F18 /* winteclogo.png */; };
 /* End PBXBuildFile section */
@@ -69,12 +70,13 @@
 		085B0EC72080804D00AF5F8A /* montserrat_regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_regular.otf; sourceTree = "<group>"; };
 		085B0EC82080804D00AF5F8A /* montserrat_light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_light.otf; sourceTree = "<group>"; };
 		0E3AC2D02196E09C008D8A14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0E3AC2D22197D51E008D8A14 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		0E3AC2D42197D587008D8A14 /* DataStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStudy.swift; sourceTree = "<group>"; };
 		0E3AC2D72197D5E7008D8A14 /* Preload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preload.swift; sourceTree = "<group>"; };
-		0E3AC2D92197D5F9008D8A14 /* Programme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programme.swift; sourceTree = "<group>"; };
 		0E3AC2DB2197D60A008D8A14 /* Semester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Semester.swift; sourceTree = "<group>"; };
 		0E3AC2DD2197D61B008D8A14 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		0E9084B0219C15D2006E5BF8 /* ProgrammeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeController.swift; sourceTree = "<group>"; };
+		0E9084B4219CC25E006E5BF8 /* CourseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseController.swift; sourceTree = "<group>"; };
+		0E9084B6219CC3FD006E5BF8 /* SemesterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterController.swift; sourceTree = "<group>"; };
 		0EB760AB2196CCE300035F18 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = "../../../../../Wintec-CBITE-iOS- Master/Images/background.jpg"; sourceTree = "<group>"; };
 		0EB760AD2196CCF000035F18 /* winteclogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = winteclogo.png; path = "../../../../../Wintec-CBITE-iOS- Master/Images/winteclogo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 		085B0E85208073E500AF5F8A = {
 			isa = PBXGroup;
 			children = (
+				0E9084B6219CC3FD006E5BF8 /* SemesterController.swift */,
 				0E3AC2D62197D594008D8A14 /* Model */,
 				085B0E90208073E500AF5F8A /* OnboardingExample */,
 				085B0EA5208073EC00AF5F8A /* OnboardingExampleTests */,
@@ -138,6 +141,8 @@
 				0EE382912196CB21008D2D6E /* Images */,
 				085B0E9A208073EC00AF5F8A /* LaunchScreen.storyboard */,
 				085B0E9D208073EC00AF5F8A /* Info.plist */,
+				0E9084B0219C15D2006E5BF8 /* ProgrammeController.swift */,
+				0E9084B4219CC25E006E5BF8 /* CourseController.swift */,
 			);
 			path = OnboardingExample;
 			sourceTree = "<group>";
@@ -183,10 +188,8 @@
 		0E3AC2D62197D594008D8A14 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0E3AC2D22197D51E008D8A14 /* Course.swift */,
 				0E3AC2D42197D587008D8A14 /* DataStudy.swift */,
 				0E3AC2D72197D5E7008D8A14 /* Preload.swift */,
-				0E3AC2D92197D5F9008D8A14 /* Programme.swift */,
 				0E3AC2DB2197D60A008D8A14 /* Semester.swift */,
 				0E3AC2DD2197D61B008D8A14 /* Student.swift */,
 			);
@@ -341,15 +344,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				085B0EC320807C9600AF5F8A /* Slide.swift in Sources */,
+				0E9084B7219CC3FD006E5BF8 /* SemesterController.swift in Sources */,
 				0E3AC2DC2197D60A008D8A14 /* Semester.swift in Sources */,
 				085B0E94208073E500AF5F8A /* OnboardingController.swift in Sources */,
+				0E9084B1219C15D2006E5BF8 /* ProgrammeController.swift in Sources */,
 				0E3AC2DE2197D61B008D8A14 /* Student.swift in Sources */,
-				0E3AC2D32197D51E008D8A14 /* Course.swift in Sources */,
 				0E3AC2D52197D587008D8A14 /* DataStudy.swift in Sources */,
-				0E3AC2DA2197D5F9008D8A14 /* Programme.swift in Sources */,
 				085B0E92208073E500AF5F8A /* AppDelegate.swift in Sources */,
 				0E3AC2D12196E09C008D8A14 /* ViewController.swift in Sources */,
 				0E3AC2D82197D5E7008D8A14 /* Preload.swift in Sources */,
+				0E9084B5219CC25E006E5BF8 /* CourseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,20 +34,22 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
     
     func createSlides() -> [Slide] {
 
-        
+        // adding slide 1
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide1.imageView.image = UIImage(named: "ic_onboarding_1")
         slide1.labelTitle.text = "Select Programme"
         slide1.labelDesc.text = "Selecting your programme will allow you to view modules for specializations"
         slide1.btn.addTarget(self, action: #selector(self.showProgrammes), for: .touchUpInside)
-        // button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
+        
+        // adding slide 2
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide2.imageView.image = UIImage(named: "ic_onboarding_2")
         slide2.labelTitle.text = "Select Semester"
         slide2.labelDesc.text = "Shows you all the available modules possible as you select a semester across all levels of study"
         slide2.btn.addTarget(self, action: #selector(self.showSemester), for: .touchUpInside)
         
+        // adding slide 3
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide3.imageView.image = UIImage(named: "ic_onboarding_3")
         slide3.labelTitle.text = "Select Course"
@@ -57,16 +59,38 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
         return [slide1, slide2, slide3]
     }
     
+    // event handler 1
     @objc func showProgrammes(sender: UIButton!) {
         print("Showing Programmes")
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "programme") as? ProgrammeController
+        {
+            present(vc, animated: true, completion: nil)
+        }
     }
     
+    // event handler 2
     @objc func showSemester(sender: UIButton!) {
         print("Showing Semester")
+        
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "semester") as? SemesterController
+        {
+            present(vc, animated: true, completion: nil)
+        }
     }
     
+    // evetn handler 3
     @objc func showCourses(sender: UIButton!) {
         print("Showing Courses")
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "course") as? CourseController
+        {
+            present(vc, animated: true, completion: nil)
+        }
+        
+    }
+    
+    // open programme view
+    func openNextView(){
+        
     }
     
     func setupSlideScrollView(slides : [Slide]) {
