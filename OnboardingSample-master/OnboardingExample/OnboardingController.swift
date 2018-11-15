@@ -24,7 +24,7 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
         
         pageControl.numberOfPages = slides.count
         pageControl.currentPage = 0
-        view.bringSubview(toFront: pageControl)
+        view.bringSubviewToFront(pageControl)
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,11 +71,11 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
     // event handler 2
     @objc func showSemester(sender: UIButton!) {
         print("Showing Semester")
-        
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "semester") as? SemesterController
         {
             present(vc, animated: true, completion: nil)
         }
+        
     }
     
     // evetn handler 3
@@ -85,7 +85,6 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
         {
             present(vc, animated: true, completion: nil)
         }
-        
     }
     
     // open programme view

@@ -23,7 +23,6 @@
 		0E3AC2D12196E09C008D8A14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2D02196E09C008D8A14 /* ViewController.swift */; };
 		0E3AC2D52197D587008D8A14 /* DataStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2D42197D587008D8A14 /* DataStudy.swift */; };
 		0E3AC2D82197D5E7008D8A14 /* Preload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2D72197D5E7008D8A14 /* Preload.swift */; };
-		0E3AC2DC2197D60A008D8A14 /* Semester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2DB2197D60A008D8A14 /* Semester.swift */; };
 		0E3AC2DE2197D61B008D8A14 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2DD2197D61B008D8A14 /* Student.swift */; };
 		0E9084B1219C15D2006E5BF8 /* ProgrammeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9084B0219C15D2006E5BF8 /* ProgrammeController.swift */; };
 		0E9084B5219CC25E006E5BF8 /* CourseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9084B4219CC25E006E5BF8 /* CourseController.swift */; };
@@ -72,7 +71,6 @@
 		0E3AC2D02196E09C008D8A14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E3AC2D42197D587008D8A14 /* DataStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStudy.swift; sourceTree = "<group>"; };
 		0E3AC2D72197D5E7008D8A14 /* Preload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preload.swift; sourceTree = "<group>"; };
-		0E3AC2DB2197D60A008D8A14 /* Semester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Semester.swift; sourceTree = "<group>"; };
 		0E3AC2DD2197D61B008D8A14 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		0E9084B0219C15D2006E5BF8 /* ProgrammeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeController.swift; sourceTree = "<group>"; };
 		0E9084B4219CC25E006E5BF8 /* CourseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseController.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 		085B0E85208073E500AF5F8A = {
 			isa = PBXGroup;
 			children = (
-				0E9084B6219CC3FD006E5BF8 /* SemesterController.swift */,
 				0E3AC2D62197D594008D8A14 /* Model */,
 				085B0E90208073E500AF5F8A /* OnboardingExample */,
 				085B0EA5208073EC00AF5F8A /* OnboardingExampleTests */,
@@ -142,6 +139,7 @@
 				085B0E9A208073EC00AF5F8A /* LaunchScreen.storyboard */,
 				085B0E9D208073EC00AF5F8A /* Info.plist */,
 				0E9084B0219C15D2006E5BF8 /* ProgrammeController.swift */,
+				0E9084B6219CC3FD006E5BF8 /* SemesterController.swift */,
 				0E9084B4219CC25E006E5BF8 /* CourseController.swift */,
 			);
 			path = OnboardingExample;
@@ -190,7 +188,6 @@
 			children = (
 				0E3AC2D42197D587008D8A14 /* DataStudy.swift */,
 				0E3AC2D72197D5E7008D8A14 /* Preload.swift */,
-				0E3AC2DB2197D60A008D8A14 /* Semester.swift */,
 				0E3AC2DD2197D61B008D8A14 /* Student.swift */,
 			);
 			path = Model;
@@ -273,13 +270,16 @@
 				TargetAttributes = {
 					085B0E8D208073E500AF5F8A = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
 					};
 					085B0EA1208073EC00AF5F8A = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
 						TestTargetID = 085B0E8D208073E500AF5F8A;
 					};
 					085B0EAC208073EC00AF5F8A = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
 						TestTargetID = 085B0E8D208073E500AF5F8A;
 					};
 				};
@@ -345,7 +345,6 @@
 			files = (
 				085B0EC320807C9600AF5F8A /* Slide.swift in Sources */,
 				0E9084B7219CC3FD006E5BF8 /* SemesterController.swift in Sources */,
-				0E3AC2DC2197D60A008D8A14 /* Semester.swift in Sources */,
 				085B0E94208073E500AF5F8A /* OnboardingController.swift in Sources */,
 				0E9084B1219C15D2006E5BF8 /* ProgrammeController.swift in Sources */,
 				0E3AC2DE2197D61B008D8A14 /* Student.swift in Sources */,
@@ -537,7 +536,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.an.onboarding.ioswintec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -557,7 +556,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.an.onboarding.ioswintec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -577,7 +576,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.an.onboarding.OnboardingExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnboardingExample.app/OnboardingExample";
 			};
@@ -598,7 +597,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.an.onboarding.OnboardingExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnboardingExample.app/OnboardingExample";
 			};
@@ -618,7 +617,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.an.onboarding.OnboardingExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = OnboardingExample;
 			};
@@ -638,7 +637,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.an.onboarding.OnboardingExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = OnboardingExample;
 			};
