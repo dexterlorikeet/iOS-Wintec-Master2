@@ -15,6 +15,32 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var pageControl: UIPageControl!
     
     
+    
+   
+    @IBAction func logout(_ sender: Any) {
+        
+        NSLog("logout");
+    
+        
+        ///////////////////////////////////////////////////////////////////////////////////
+        //                                                                               //
+        //  step 1: get the handler to the main storyboard (Main)
+        //
+        //  step 2: get a handler to vc to be shown by id
+        //
+        //  step 3: push the view controller (as in step 2)
+        //
+        //
+        ///////////////////////////////////////////////////////////////////////////////////
+        
+        
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewControl") as? ViewController
+         {
+            present(vc, animated: true, completion: nil)
+         }
+        
+    }
+    
     var slides:[Slide] = [];
     
     override func viewDidLoad() {

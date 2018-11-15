@@ -8,7 +8,7 @@
 
 import UIKit
 
-class viewController: UIViewController {
+class ViewController: UIViewController {
     
 
     @IBAction func login(_ sender: UIButton) {
