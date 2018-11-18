@@ -24,12 +24,16 @@
 		0E3AC2D52197D587008D8A14 /* DataStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2D42197D587008D8A14 /* DataStudy.swift */; };
 		0E3AC2D82197D5E7008D8A14 /* Preload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2D72197D5E7008D8A14 /* Preload.swift */; };
 		0E3AC2DE2197D61B008D8A14 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AC2DD2197D61B008D8A14 /* Student.swift */; };
+		0E4B1B9C219FD75F00CAEB7B /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B1B9B219FD75F00CAEB7B /* StudentViewController.swift */; };
+		0E4B1B9E219FE39100CAEB7B /* Slide2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E4B1B9D219FE39100CAEB7B /* Slide2.xib */; };
+		0E4B1BA0219FE3A200CAEB7B /* Slide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B1B9F219FE3A200CAEB7B /* Slide2.swift */; };
 		0E9084B1219C15D2006E5BF8 /* ProgrammeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9084B0219C15D2006E5BF8 /* ProgrammeController.swift */; };
 		0E9084B5219CC25E006E5BF8 /* CourseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9084B4219CC25E006E5BF8 /* CourseController.swift */; };
 		0E9084B7219CC3FD006E5BF8 /* SemesterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9084B6219CC3FD006E5BF8 /* SemesterController.swift */; };
 		0E9084BA219D2EA3006E5BF8 /* users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9084B9219D2EA3006E5BF8 /* users.swift */; };
 		0EB760AC2196CCE300035F18 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EB760AB2196CCE300035F18 /* background.jpg */; };
 		0EB760AE2196CCF000035F18 /* winteclogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EB760AD2196CCF000035F18 /* winteclogo.png */; };
+		0EDC1D5E21A1362A00CE72A2 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDC1D5D21A1362A00CE72A2 /* MyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,12 +77,16 @@
 		0E3AC2D42197D587008D8A14 /* DataStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStudy.swift; sourceTree = "<group>"; };
 		0E3AC2D72197D5E7008D8A14 /* Preload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preload.swift; sourceTree = "<group>"; };
 		0E3AC2DD2197D61B008D8A14 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		0E4B1B9B219FD75F00CAEB7B /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
+		0E4B1B9D219FE39100CAEB7B /* Slide2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide2.xib; sourceTree = "<group>"; };
+		0E4B1B9F219FE3A200CAEB7B /* Slide2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide2.swift; sourceTree = "<group>"; };
 		0E9084B0219C15D2006E5BF8 /* ProgrammeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeController.swift; sourceTree = "<group>"; };
 		0E9084B4219CC25E006E5BF8 /* CourseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseController.swift; sourceTree = "<group>"; };
 		0E9084B6219CC3FD006E5BF8 /* SemesterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterController.swift; sourceTree = "<group>"; };
 		0E9084B9219D2EA3006E5BF8 /* users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = users.swift; sourceTree = "<group>"; };
 		0EB760AB2196CCE300035F18 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = "../../../../../Wintec-CBITE-iOS- Master/Images/background.jpg"; sourceTree = "<group>"; };
 		0EB760AD2196CCF000035F18 /* winteclogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = winteclogo.png; path = "../../../../../Wintec-CBITE-iOS- Master/Images/winteclogo.png"; sourceTree = "<group>"; };
+		0EDC1D5D21A1362A00CE72A2 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,7 @@
 		085B0E85208073E500AF5F8A = {
 			isa = PBXGroup;
 			children = (
+				0EDC1D5D21A1362A00CE72A2 /* MyCell.swift */,
 				0E9084B8219D2E8F006E5BF8 /* Data */,
 				0E3AC2D62197D594008D8A14 /* Model */,
 				085B0E90208073E500AF5F8A /* OnboardingExample */,
@@ -143,6 +152,7 @@
 				085B0E9D208073EC00AF5F8A /* Info.plist */,
 				0E9084B0219C15D2006E5BF8 /* ProgrammeController.swift */,
 				0E9084B6219CC3FD006E5BF8 /* SemesterController.swift */,
+				0E4B1B9B219FD75F00CAEB7B /* StudentViewController.swift */,
 				0E9084B4219CC25E006E5BF8 /* CourseController.swift */,
 			);
 			path = OnboardingExample;
@@ -170,7 +180,9 @@
 			isa = PBXGroup;
 			children = (
 				085B0EC020807C6F00AF5F8A /* Slide.xib */,
+				0E4B1B9D219FE39100CAEB7B /* Slide2.xib */,
 				085B0EC220807C9600AF5F8A /* Slide.swift */,
+				0E4B1B9F219FE3A200CAEB7B /* Slide2.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -330,6 +342,7 @@
 				085B0EC120807C6F00AF5F8A /* Slide.xib in Resources */,
 				085B0ECA2080804D00AF5F8A /* montserrat_medium.otf in Resources */,
 				085B0ECB2080804D00AF5F8A /* montserrat_regular.otf in Resources */,
+				0E4B1B9E219FE39100CAEB7B /* Slide2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4B1B9C219FD75F00CAEB7B /* StudentViewController.swift in Sources */,
 				085B0EC320807C9600AF5F8A /* Slide.swift in Sources */,
 				0E9084B7219CC3FD006E5BF8 /* SemesterController.swift in Sources */,
 				085B0E94208073E500AF5F8A /* OnboardingController.swift in Sources */,
@@ -361,8 +375,10 @@
 				0E3AC2DE2197D61B008D8A14 /* Student.swift in Sources */,
 				0E3AC2D52197D587008D8A14 /* DataStudy.swift in Sources */,
 				085B0E92208073E500AF5F8A /* AppDelegate.swift in Sources */,
+				0E4B1BA0219FE3A200CAEB7B /* Slide2.swift in Sources */,
 				0E3AC2D12196E09C008D8A14 /* ViewController.swift in Sources */,
 				0E3AC2D82197D5E7008D8A14 /* Preload.swift in Sources */,
+				0EDC1D5E21A1362A00CE72A2 /* MyCell.swift in Sources */,
 				0E9084B5219CC25E006E5BF8 /* CourseController.swift in Sources */,
 				0E9084BA219D2EA3006E5BF8 /* users.swift in Sources */,
 			);

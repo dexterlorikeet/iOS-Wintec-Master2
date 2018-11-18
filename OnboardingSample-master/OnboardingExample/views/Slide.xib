@@ -76,6 +76,11 @@
             </connections>
             <point key="canvasLocation" x="53.600000000000001" y="57.121439280359823"/>
         </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FhK-gq-CXV">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <point key="canvasLocation" x="892" y="-146"/>
+        </button>
     </objects>
     <resources>
         <image name="imageView:QDx-f0-rb9:image" width="194.5" height="170">

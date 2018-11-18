@@ -24,13 +24,13 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
         
         ///////////////////////////////////////////////////////////////////////////////////
         //                                                                               //
-        //  step 1: get the handler to the main storyboard (Main)
-        //
-        //  step 2: get a handler to vc to be shown by id
-        //
-        //  step 3: push the view controller (as in step 2)
-        //
-        //
+        //  step 1: get the handler to the main storyboard (Main)                        //
+        //                                                                               //
+        //  step 2: get a handler to vc to be shown by id                                //
+        //                                                                               //
+        //  step 3: push the view controller (as in step 2)                              //
+        //                                                                               //
+        //                                                                               //
         ///////////////////////////////////////////////////////////////////////////////////
         
         
@@ -169,10 +169,7 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
         } else if(percentOffset.x > 0.25 && percentOffset.x <= 0.50) {
             slides[1].imageView.transform = CGAffineTransform(scaleX: (0.50-percentOffset.x)/0.25, y: (0.50-percentOffset.x)/0.25)
             slides[2].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.50, y: percentOffset.x)
-            
     }
-    
-    
     
     
     func scrollView(_ scrollView: UIScrollView, didScrollToPercentageOffset percentageHorizontalOffset: CGFloat) {
