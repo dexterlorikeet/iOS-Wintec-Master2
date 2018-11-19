@@ -77,7 +77,7 @@ class StudentViewController: UIViewController, UIScrollViewDelegate {
         
         // adding slide 1
         let slide1: Slide2 = Bundle.main.loadNibNamed("Slide2", owner: self, options: nil)?.first as! Slide2
-        slide1.imageView.image = UIImage(named: "ic_onboarding_2")
+        slide1.imageView.image = UIImage(named: "ic_onboarding_1")
         slide1.labelTitle.text = "Network Engineering"
         slide1.labelDesc.text = "Viewing all available modules for Network Engineering"
         //slide1.btn.addTarget(self, action: #selector(self.showProgrammes), for: .touchUpInside)
@@ -99,7 +99,7 @@ class StudentViewController: UIViewController, UIScrollViewDelegate {
         
         // adding slide 4
         let slide4:Slide2 = Bundle.main.loadNibNamed("Slide2", owner: self, options: nil)?.first as! Slide2
-        slide3.imageView.image = UIImage(named: "ic_onboarding_3")
+        slide3.imageView.image = UIImage(named: "ic_onboarding_4")
         slide3.labelTitle.text = "Multimedia and Web Development"
         slide3.labelDesc.text = "Viewing all available modules for Multimedia and Web Development"
         //
